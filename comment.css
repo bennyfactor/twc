@@ -1,0 +1,28 @@
+body.content-body, #comments-title, a.comment-reply-link, .entry-meta .edit-link a, .commentlist .edit-link a, #reply-title, #respond input[type="text"], #respond textarea {
+background-color: transparent;
+color: #AAA;
+}
+
+.commentlist li.comment, .commentlist li.postbyauthor, #respond{
+background: black;
+}
+
+
+body.content-body { padding: 0;}
+
+
+#comments-title {display: none;}
+
+.commentlist { margin: 0 0 0 auto; }
+
+#respond input#submit {left: 0;}
+
+#alt-login-methods {
+clear: both;
+height: 24px;
+margin-bottom: 20px;
+}
+#alt-login-methods p {
+
+vertical-align: top;
+}

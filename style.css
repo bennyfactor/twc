@@ -1,0 +1,84 @@
+/*
+Theme Name:     TWC
+Theme URI:      http: //iaatb.net/pictures
+Description:    Responsive gallery theme for wordpress
+Author:         B.H. Lamb
+Author URI:     http: //iaatb.net/
+Template: twentyeleven
+Version: 1.0
+*/
+
+
+@import url("../twentyeleven/style.css");
+@import url("header.css");
+@import url("comment.css");
+
+a, a:visited {
+font-color: #336699;
+}
+a: hover {
+font-color: #ea2001;
+}
+
+#page {
+margin: 0;
+margin-left: 176px;
+background: transparent;
+}
+
+#branding hgroup {
+width: 1000px;
+margin-left: 0px;
+}
+
+#site-title {
+width: 1000px;
+}
+
+#site-title a {
+color: #ea2001;
+}
+
+#content {
+margin: 0 !important;
+width: 1000px;
+}
+
+#page {
+top: 30px;
+position: absolute;
+}
+
+#site-title {
+padding-top: 0px;
+}
+
+#site-title a {
+font-size: 45px;
+line-height: 55px;
+}
+
+#branding {
+border: 0px;
+padding-bottom: 7px;
+}
+
+#branding #searchform {
+top: 15px;
+right: 15px;
+}
+
+#searchform {
+background-color: white;
+opacity: 0.6;
+}
+
+a.imagelink {
+z-index: 999;
+display:block;
+}
+
+body {
+background-color: #111;
+border: 0;
+}
