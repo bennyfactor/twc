@@ -90,7 +90,7 @@ if ( $images = get_posts(array(
 			$attachmenturl=get_attachment_link($image->ID);
 			$attachmentimage=wp_get_attachment_image_src( $image->ID, full );
 			$attachmentthumbnail=wp_get_attachment_image_src( $image->ID, thumbnail );
-			$imageDescription = mysqli_real_escape_string(apply_filters( 'the_description' , $image->post_content ) . $image->post_excerpt);
+			$imageDescription = json_encode(apply_filters( 'the_description' , $image->post_content ) . $image->post_excerpt);
 			$imageTitle = apply_filters( 'the_title' , $image->post_title );
 
 			//GET COMMENT METADATA FOR IMAGE
@@ -111,7 +111,7 @@ if ( $images = get_posts(array(
 			$tagname.= $tag->name . ", ";
 			
 			}
-			$tagname = mysqli_real_escape_string(rtrim($tagname, ", ")); //scrub data, remove final comma
+			$tagname = json_encode(rtrim($tagname, ", ")); //scrub data, remove final comma
 			//echo $tagname."\n";
 		//print_r($tags);
 
