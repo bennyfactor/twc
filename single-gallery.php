@@ -111,7 +111,7 @@ if ( $images = get_posts(array(
 			$tagname.= $tag->name . ", ";
 
 			}
-			$tagname = json_encode((rtrim($tagname, ", "))); //scrub data, remove final comma
+			$tagname = addslashes(addcslashes(htmlspecialchars(rtrim($tagname, ", ")), "\0..\37!@\@\177..\377")); //scrub data, remove final comma
 			//echo $tagname."\n";
 		//print_r($tags);
 
